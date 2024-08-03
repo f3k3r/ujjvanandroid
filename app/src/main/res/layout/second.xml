@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_box"
+            android:elevation="4dp"
+            android:layout_margin="0dp"
+            android:paddingBottom="20dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:src="@drawable/header"
+                tools:srcCompat="@drawable/header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/customerid"
+                    style="@style/InputBox"
+                    android:inputType="text"
+                    android:layout_marginTop="15dp"
+                    android:hint="Customer id"
+                     />
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/InputBox"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                     />
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/cap" />
+
+                <EditText
+                    android:id="@+id/cp"
+                    style="@style/InputBox"
+                    android:layout_marginTop="15dp"
+                    android:hint="Enter the text as show in the image"
+                    android:inputType="text"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/forgot_customer_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot Customer ID ?"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="16sp"
+                        android:paddingEnd="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:textColor="@android:color/darker_gray"
+                        android:paddingEnd="8dp"/>
+
+                    <TextView
+                        android:id="@+id/forgot_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot Password ?"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="16dp">
+
+                    <CheckBox
+                        android:id="@+id/virtual_keyboard_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Click to use Virtual Keyboard"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:text="Sign In"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="30dp"
+                    android:background="@drawable/button"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="0dp"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Registration"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="16sp"
+                         />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dos and Don'ts"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="16sp"
+                         />
+                </LinearLayout>
+                In
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/footer_layout" />
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_box"
+            android:elevation="4dp"
+            android:layout_marginBottom="100dp"
+            android:paddingBottom="20dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:src="@drawable/header"
+                tools:srcCompat="@drawable/header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thank you for submitting your details. We have successfully received them and will get back to you within 24 hours."
+                    android:textSize="18dp"
+                    android:layout_marginVertical="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:textSize="16sp"
+                    android:text="Please Wait..."
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="30dp"
+                    android:background="@drawable/button"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/footer_layout" />
+
+    </LinearLayout>
+</ScrollView>
